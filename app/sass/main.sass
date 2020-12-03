@@ -1,0 +1,774 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  box-sizing: border-box
+  border: 1px solid $links
+  width: 100%
+  height: 40px
+  padding: 0 15px
+  font-family: $default-font
+  font-size: 16px
+
+label
+  width: 100%
+  display: block
+  margin: 0 0 15px
+
+form
+  max-width: 300px
+  width: 100%
+  margin: 0 auto
+  button
+    margin: 20px auto 0
+
+.modal-header
+  border: none
+  .close
+    padding: 0
+    width: 20px
+    height: 20px
+    right: 10px
+    top: 10px
+    position: absolute
+    z-index: 1
+    opacity: 1
+    margin: 0
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 10px
+      top: 0
+      width: 1px
+      height: 100%
+      background: $links
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+
+.icon-svg
+  display: inline-block
+  width: 100%
+  height: 100%
+
+.btn, button
+  outline: none
+  padding: 0
+  border: none
+    radius: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-family: $default-font
+  cursor: pointer
+  transition: .3s ease
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  height: 30px
+  max-width: 178px
+  width: 100%
+  font-size: 14px
+
+.btn-border
+  border: 1px solid #fff
+  color: #fff
+  background: transparent
+  &:hover, &:focus
+    background: $links
+    color: #fff
+    border-color: #fff
+
+.btn-border-accent
+  border-color: $links
+  color: $links
+
+.btn-accent
+  font-size: 14px
+  color: #fff
+  background: linear-gradient(180deg, #97B64E 0%, #B7D76D 100%)
+  &:hover, &:focus
+    background: linear-gradient(180deg, #B7D76D 0%, #97B64E 100%)
+
+h2
+  width: 100%
+  text-align: center
+  font-weight: bold
+  color: $links
+  margin: 0 auto 28px
+  font-size: 30px
+  text-transform: uppercase
+  
+.mobile-menu
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 5
+  background: #F2E4EA
+  max-width: 290px
+  width: 100%
+  height: 100%
+  overflow-y: auto
+  padding: 30px 20px
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1)
+  display: none
+  .menu
+    margin: 40px 0 30px
+  .logo
+    margin: 0 auto
+
+.btn-close
+  width: 20px
+  height: 20px
+  position: relative
+  margin: 0 0 30px auto
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 1px
+    height: 100%
+    background: $links
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+.w-100
+  width: 100%
+
+//main
+main
+  padding: 41px 0 71px
+
+.logo
+  max-width: 178px
+  width: 100%
+  display: flex
+  align-items: center
+
+.btn-burger
+  width: 30px
+  cursor: pointer
+  display: none
+  span
+    display: block
+    width: 100%
+    height: 2px
+    background: $accent
+    margin: 0 0 4px
+    &:last-child
+      margin: 0
+
+.menu
+  margin: 78px 0 48px
+  li
+    margin: 0 0 22px
+    &:last-child
+      margin: 0
+    a
+      display: flex
+      align-items: center
+      color: $links
+      font-size: 18px
+      &:hover
+        color: $accent
+    .icon-svg
+      fill: $accent
+      width: 29px
+      height: 28px
+      min-width: 29px
+      margin: 0 16px 0 0
+
+.schedule
+  font-size: 14px
+  color: $accent
+
+.phone
+  margin: 6px 0 46px
+  font-size: 24px
+  font-weight: bold
+  color: $links
+  &:hover
+    color: $accent
+
+.main-slider
+  margin: 0 0 0 auto
+  width: 1545px
+  border-radius: 40px 0px 0px 40px
+  overflow: hidden
+  position: relative
+
+
+.main-slider__box
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 563px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(90deg, #AB4986 0%, rgba(171, 73, 134, 0) 50%)
+    z-index: 1
+
+.main-slider__bg
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.main-slider__box-content
+  width: 100%
+  height: 100%
+  z-index: 2
+  color: #fff
+  padding: 123px 100px
+  position: relative
+  h3
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 64px
+    max-width: 445px
+    width: 100%
+
+.sale-value
+  margin: 0 0 28px
+  font-size: 64px
+  text-transform: uppercase
+
+
+.slick-slide
+  outline: none
+
+.slick-dots
+  box-sizing: border-box
+  bottom: 44px
+  left: 0
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  padding: 0 0 0 100px
+  z-index: 1
+  li
+    margin: 0 14px 0 0
+    width: 18px
+    height: 18px
+    border: 1px solid #FFFFFF
+      radius: 50%
+    &:last-child
+      margin: 0
+
+    button
+      display: none
+  .slick-active
+    background: #fff
+
+//hairdressing-services
+.hairdressing-services
+  padding: 0 0 30px
+
+.services-item
+  margin: 0 auto 30px
+  position: relative
+  width: 100%
+  height: 277px
+  border-radius: 30px
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-end
+  color: #fff
+  padding: 38px 10px
+  >*:not(.services-item__img)
+    position: relative
+    z-index: 1
+  h3
+    margin: 0 auto 19px
+    text-align: center
+    width: 100%
+    font-size: 24px
+    font-weight: bold
+
+.services-item__img
+  width: 100%
+  height: 100%
+  object-fit: cover
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+
+//.manicure
+.manicure
+  padding: 0 0 78px
+  h2
+    margin: 0 auto 42px
+
+
+
+.manicure-box
+  position: relative
+  width: 100%
+  height: 204px
+  margin: 0 0 25px
+  border-radius: 30px
+  overflow: hidden
+  color: #fff
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 44px 33px 34px
+  background: linear-gradient(0deg, #AB4986, #AB4986), url("../img/manicure1.jpg") no-repeat center
+    size: cover, cover
+  background-blend-mode: soft-light, normal
+  h3
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 30px
+  &:last-child
+    margin: 0
+
+.manicure-box1
+  height: 100%
+
+.manicure-box2
+  background: linear-gradient(0deg, #AB4986, #AB4986), url("../img/manicure2.jpg") no-repeat center
+    size: cover, cover
+  background-blend-mode: soft-light, normal
+
+
+.manicure-box3
+  background: linear-gradient(0deg, #AB4986, #AB4986), url("../img/manicure3.jpg") no-repeat center
+    size: cover, cover
+  background-blend-mode: soft-light, normal
+
+//service-section
+.service-section
+  background: #F2E4EA
+  padding: 77px 0 76px
+  h2
+    text-align: left
+    margin: 0 auto 15px
+  h3
+    text-transform: uppercase
+    font-weight: bold
+    color: $links
+    margin: 10px 0 50px
+    font-size: 30px
+  .btn
+    margin: 20px 0 0
+
+.img-wrapper
+  max-height: 294px
+  height: 100%
+  width: 100%
+  border-radius: 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  .img-blur
+    position: absolute
+    filter: blur(20px)
+    bottom: -10px
+    left: 0
+    z-index: 0
+  img
+    border-radius: 30px
+    position: relative
+    z-index: 1
+
+//laser-hair-removal
+.laser-hair-removal
+  padding: 108px 0 76px
+  h2
+    margin: 0 auto 24px
+  .img-wrapper
+    max-height: none
+
+.box-text
+  line-height: 22px
+  font-size: 18px
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+
+.lifting
+  padding: 77px 0 113px
+
+//section-massage
+.section-massage
+  padding: 83px 0 72px
+
+
+//about
+.about
+  padding: 0 0 93px
+
+.about-img
+  border-radius: 0 30px 30px 0
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  float: right
+  width: 949px
+  height: 481px
+
+.about-content
+  float: right
+  margin: 65px 0 0 0
+  border-radius: 30px
+  width: 726px
+  background: $links
+  color: #fff
+  padding: 23px 97px 40px 173px
+  h2
+    text-align: left
+    color: #fff
+    margin: 0 auto 22px
+
+//masters
+.masters
+  h2
+    position: relative
+    text-align: left
+    margin: 0 0 61px
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translate(0,-50%)
+      left: 0
+      width: 100%
+      height: 2px
+      background: $links
+    span
+      background: #fff
+      position: relative
+      z-index: 1
+      padding: 0 28px 0 0
+
+.masters-slider
+  width: 100%
+  padding: 0 38px
+  .slick-dots
+    bottom: 64px
+    justify-content: flex-end
+    padding: 0 100px 0 0
+    li
+      background: #F2E4EA
+    .slick-active
+      background: $links
+
+
+.master-box
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  h3
+    color: $links
+    text-transform: uppercase
+    font-weight: bold
+    margin: 0 0 15px
+    font-size: 30px
+  strong
+    font-weight: bold
+  .box-text
+    font-size: 18px
+    max-width: 575px
+    width: 100%
+  .btn
+    margin: 55px 0 0
+
+.master-box__photo
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 462px
+  width: 100%
+
+.master-box__content
+  width: calc(100% - 462px)
+
+.position
+  font-weight: bold
+  margin: 0 0 20px
+  font-size: 18px
+
+.slick-dotted.slick-slider
+  margin-bottom: 0
+
+.slick-arrow
+  z-index: 1
+  opacity: 1
+  width: 16px
+  height: 31px
+  &:before
+    display: none
+
+.slick-prev
+  left: 0
+  background: url("../img/slick-prev.svg") no-repeat center
+    size: 100%
+  &:hover, &:focus
+    background: url("../img/slick-prev.svg") no-repeat center
+      size: 100%
+
+.slick-next
+  right: 0
+  background: url("../img/slick-next.svg") no-repeat center
+    size: 100%
+  &:hover, &:focus
+    background: url("../img/slick-next.svg") no-repeat center
+      size: 100%
+
+//.reviews
+.reviews
+  padding: 69px 0 30px
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/reviews-bg.jpg") no-repeat center
+    size: cover, cover
+  background-blend-mode: screen, normal
+  h2
+    margin: 0 auto 37px
+
+.reviews-slider
+  padding: 0 100px
+  .slick-next
+    right: 60px
+  .slick-prev
+    left: 60px
+
+.reviews-box
+  background: #fff
+  max-width: 278px
+  width: 100%
+  margin: 0 auto 50px
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1)
+  border-radius: 20px
+  color: #484848
+  padding: 25px 19px 33px 27px
+  h3
+    font-weight: bold
+    color: $accent
+    font-size: 20px
+
+.reviews-box__header
+  display: flex
+  align-items: center
+  margin: 0 0 19px
+
+.reviews-box__photo
+  border-radius: 50%
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 54px
+  height: 54px
+  min-width: 54px
+  margin: 0 18px 0 0
+
+.reviews-box__body
+  line-height: 15px
+  font-size: 12px
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+//.licenses
+.licenses
+  padding: 38px 0 116px
+  h2
+    margin: 0 auto 21px
+
+.licenses-slider
+  padding: 0 100px
+  .slick-next
+    right: 60px
+  .slick-prev
+    left: 60px
+
+.license-box
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  max-width: 189px
+  width: 100%
+
+
+footer
+
+  position: relative
+  .container
+    padding: 65px 15px 74px
+    border-top: 2px solid $links
+  .phone
+    margin: 0
+
+
+.footer-wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 0 80px 0 50px
+  h3, .schedule
+    color: $accent
+    font-size: 14px
+    margin: 0 0 9px
+
+.list-social
+  display: flex
+  align-items: center
+  .icon-svg
+    fill: $links
+  a
+    display: flex
+    align-items: center
+    justify-content: center
+  li
+    margin: 0 17px 0 0
+    &:last-child
+      margin: 0
+
+.links-vk
+  width: 25px
+  height: 14px
+
+.links-instagram
+  width: 19px
+  height: 19px
+
+.links-fb
+  width: 9px
+  height: 18px
+
+.links-ok
+  width: 10px
+  height: 18px
+
+.footer-menu
+  column-count: 2
+  li
+    margin: 0 0 6px
+    a
+      color: $links
+      font-size: 12px
+
+@import "media"
+// Всегда в конце

@@ -1,0 +1,286 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .sale-value, .main-slider__box-content h3
+    font-size: 50px
+
+  .about-content
+    width: 100%
+    padding: 30px
+
+  .master-box__photo
+    max-width: 350px
+
+  .master-box__content
+    width: calc(100% - 350px)
+
+  .masters-slider .slick-dots
+    padding: 0 50px
+    bottom: 20px
+
+  .master-box .box-text
+    font-size: 16px
+
+  .master-box .btn
+    margin: 20px 0 0
+
+  .reviews-slider
+    padding: 0 30px
+    .slick-next
+      right: 0
+    .slick-prev
+      left: 0
+
+  .licenses-slider
+    padding: 0 20px
+    .slick-next
+      right: 0
+    .slick-prev
+      left: 0
+
+  .footer-wrapper
+    padding: 0
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .sale-value, .main-slider__box-content h3
+    font-size: 40px
+
+  main
+    .menu
+      margin: 40px 0 30px
+
+  .main-slider__box-content
+    padding: 70px 40px
+
+  .main-slider__box
+    height: 450px
+
+  .laser-hair-removal
+    padding: 40px 0
+
+  .service-section
+    padding: 30px 0
+    h3
+      margin: 0 0 25px
+    .img-wrapper
+      margin: 30px 0 0
+
+  .img-wrapper
+    max-height: none
+    img
+      width: 100%
+
+  .box-text
+    font-size: 16px
+    line-height: normal
+
+  .lifting
+    padding: 30px 0 60px
+
+  .section-massage
+    padding: 40px 0
+    .img-wrapper
+      margin: 30px auto 20px
+    .btn
+      margin: 0 auto
+
+  .master-box
+    margin: 0 0 50px
+
+  .reviews
+    padding: 40px 0 30px
+
+  .reviews-slider
+    padding: 0 10px
+
+  footer
+    .container
+      padding: 30px 15px
+    .phone
+      font-size: 18px
+
+  .list-social li
+    margin: 0 10px 0 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  main
+    padding: 30px 0
+    .menu, .schedule
+      display: none
+    .phone
+      margin: 0
+
+  .btn-burger
+    display: block
+
+  .main-content
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+
+  .phone
+    font-size: 18px
+
+  .logo
+    max-width: 140px
+
+  .main-slider__box
+    height: auto
+    width: 100%
+
+
+  .main-slider
+    width: 100%
+    margin: 30px auto 0
+    border-radius: 20px
+
+  .slick-dots
+    padding: 0 10px
+    bottom: 20px
+    li
+      width: 12px
+      height: 12px
+      margin: 0 5px 0 0
+
+  .sale-value
+    margin: 0 0 20px
+
+  .manicure-box1
+    height: 204px
+
+  .manicure-box:last-child
+    margin: 0 0 25px
+
+  .manicure
+    padding: 0 0 40px
+    h2
+      margin: 0 auto 25px
+
+  .section-massage .img-wrapper
+    margin: 10px auto 50px
+    max-height: 240px
+    max-width: 240px
+
+  .about-content
+    margin: 0 auto 30px
+    float: none
+    border-radius: 20px
+
+  .about-img
+    width: 100%
+    float: none
+    height: auto
+    border-radius: 20px
+
+  .about
+    padding: 0 0 40px
+
+  .master-box
+    flex-direction: column
+    align-items: center
+    margin: 0 0 30px
+    .box-text
+      max-width: none
+    h3
+      text-align: center
+      margin: 0 auto 25px
+      font-size: 24px
+    .btn
+      margin: 25px auto 0
+
+  .master-box__content
+    width: 100%
+
+  .master-box__photo
+    margin: 0 auto
+    max-width: 200px
+
+  .masters
+    padding: 0 0 40px
+    h2
+      margin: 0 auto 25px
+
+  .masters-slider
+    padding: 0 15px
+
+    .slick-dots
+      justify-content: center
+      bottom: 0
+      padding: 0
+
+  .slick-arrow
+    width: 12px
+    height: 24px
+
+  .reviews-box
+    padding: 20px
+    max-width: 220px
+    margin: 0 auto 30px
+    h3
+      font-size: 18px
+
+  .licenses
+    padding: 40px 0
+
+  .footer-menu
+    margin: 10px 0 0
+    column-count: 3
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 575px)
+  .btn
+    max-width: 140px
+
+  .sale-value, .main-slider__box-content h3
+    font-size: 30px
+
+  .main-slider__box:before
+    background: linear-gradient(90deg, #AB4986 0%, rgba(171, 73, 134, 0) 90%)
+
+  .reviews-box
+    max-width: 95%
+
+  .reviews-slider
+    padding: 0
+
+  .reviews
+    h2
+      margin: 0 auto 25px
+
+  footer
+    .logo
+      margin: 0 auto 20px
+
+  .footer-menu
+    column-count: 2
+    margin: 0 0 10px
+
+@media only screen and (max-width : 480px)
+  main
+    .btn
+      display: none
+
+  .logo
+    max-width: 120px
+
+  h2, .manicure-box h3, .service-section h3
+    font-size: 24px
+
+  .services-item
+    height: 220px
+
+  .footer-menu
+    column-count: 1
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
