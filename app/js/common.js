@@ -28,6 +28,7 @@ $('.reviews-slider').slick({
             breakpoint: 575,
             settings: {
                 slidesToShow: 1,
+                fade: true
             }
         }
     ]
