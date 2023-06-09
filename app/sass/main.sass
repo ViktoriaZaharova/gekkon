@@ -113,11 +113,13 @@ form
   max-width: 300px
   width: 100%
   margin: 0 auto
+
   button
     margin: 20px auto 0
 
 .modal-header
   border: none
+
   .close
     padding: 0
     width: 20px
@@ -128,6 +130,7 @@ form
     z-index: 1
     opacity: 1
     margin: 0
+
     &:before, &:after
       content: ''
       position: absolute
@@ -136,8 +139,10 @@ form
       width: 1px
       height: 100%
       background: $links
+
     &:before
       transform: rotate(45deg)
+
     &:after
       transform: rotate(135deg)
 
@@ -158,6 +163,7 @@ form
   font-family: $default-font
   cursor: pointer
   transition: .3s ease
+
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -172,6 +178,7 @@ form
   border: 1px solid #fff
   color: #fff
   background: transparent
+
   &:hover, &:focus
     background: $links
     color: #fff
@@ -185,8 +192,17 @@ form
   font-size: 14px
   color: #fff
   background: linear-gradient(180deg, #97B64E 0%, #B7D76D 100%)
+
   &:hover, &:focus
     background: linear-gradient(180deg, #B7D76D 0%, #97B64E 100%)
+
+h1
+  width: 100%
+  margin: 0 0 18px
+  font-size: 30px
+  font-weight: bold
+  text-transform: uppercase
+  color: $links
 
 h2
   width: 100%
@@ -196,7 +212,11 @@ h2
   margin: 0 auto 28px
   font-size: 30px
   text-transform: uppercase
-  
+
+strong
+  display: inline-block
+  font-weight: 500
+
 .mobile-menu
   position: fixed
   left: 0
@@ -210,8 +230,10 @@ h2
   padding: 30px 20px
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1)
   display: none
+
   .menu
     margin: 40px 0 30px
+
   .logo
     margin: 0 auto
 
@@ -221,6 +243,7 @@ h2
   position: relative
   margin: 0 0 30px auto
   cursor: pointer
+
   &:before, &:after
     content: ''
     position: absolute
@@ -229,13 +252,239 @@ h2
     width: 1px
     height: 100%
     background: $links
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 
 .w-100
   width: 100%
+
+.my-ul
+  list-style: none
+  padding: 0
+
+.mb-45
+  margin-bottom: 45px
+
+//header
+header
+  padding: 45px 0
+  .btn-burger
+    display: flex
+    width: 22px
+  .phone
+    font-size: 20px
+    margin: 0 0 0 12px
+
+  .footer-box
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 77px 0 58px
+  .logo
+    margin: 0 auto 0 0
+    max-width: 178px
+
+.dropdown-toggle
+  color: #AB4986
+  font-size: 20px
+  font-weight: bold
+  &:after
+    width: 16px
+    height: 8px
+    margin: 0 0 0 17px
+    background: url('../img/arrow-bottom.svg') no-repeat center
+      size: 100%
+    border: none
+  &:hover
+    color: #000
+
+.dropdown-menu
+  border: 1px solid $links
+    radius: 10px
+
+
+.dropdown-item
+  &:hover
+    background: rgba($links, .1)
+
+
+//blog page
+.page-blog
+  margin: 0 0 87px
+
+.filter-list
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 0 44px
+
+  li
+    margin: 0 8px 10px 0
+
+    &:last-child
+      margin-right: 0
+
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #97B64E
+      font-size: 14px
+      border: 1px solid #97B64E
+        radius: 20px
+      padding: 10px 15px
+
+      &.active
+        background: linear-gradient(180deg, #97B64E 0%, #B7D76D 100%)
+        color: #fff
+
+.blog-card
+  width: 100%
+  height: 100%
+
+  &__img
+    width: 100%
+    height: 278px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 30px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 30px
+  &__body
+    padding: 14px 0 0
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: calc(100% - 278px)
+  .date
+    margin: 0 0 6px
+    color: #97B64E
+  &__title
+    color: $links
+    margin: 0 0 12px
+    font-size: 24px
+    font-weight: bold
+    text-transform: uppercase
+    &:hover
+      color: #000
+  .box-text
+    font-size: 18px
+    margin: 0 0 22px
+  .btn
+    margin: auto 0 0
+
+.btn-toggle
+  margin: 40px auto 0
+  .svg-icon
+    stroke: #fff
+    fill: none
+    width: 10px
+    height: 5px
+    margin: 0 0 0 10px
+
+//page article
+.page-article
+  margin: 0 0 65px
+  h1
+    max-width: 380px
+    margin: 0 0 7px
+  ol
+    list-style: decimal
+    padding: 0 0 0 20px
+  ul
+    list-style: disc
+    padding: 0 0 0 20px
+  .date
+    color: #97B64E
+    margin: 0 18px 0 0
+
+.article-category
+  color: #A3A3A3
+  font-size: 10px
+  background: #F8F8F8
+  padding: 5px 10px
+  border-radius: 20px
+
+.article-head
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 0 22px
+
+
+.article-image
+  width: 100%
+  margin: 0 0 40px
+  img
+    width: 100%
+    border-radius: 30px
+
+.article-gallery
+  margin: 35px 0 40px
+  padding: 0 90px
+  .slick-dots
+    position: relative
+    bottom: 0
+    padding: 0
+    justify-content: center
+    margin: 30px auto 40px
+    li
+      border: none
+      background: #F2E4EA
+      &.slick-active
+        background: #AB4986
+  .slide
+    padding: 0 10px
+  &__item
+    border-radius: 30px
+    height: 232px
+    width: 100%
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 30px
+
+.video-box
+  width: 100%
+  height: 337px
+  overflow: hidden
+  margin: 30px auto
+  position: relative
+  z-index: 1
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 30px
+  &:after, &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+  &:before
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
+    width: 100%
+    height: 100%
+    border-radius: 30px
+  &:after
+    width: 92px
+    height: 92px
+    border-radius: 50%
+    background: #AB4986 url('../img/play.svg') no-repeat center
+      size: 18px
+  img
+    width: 100%
+    border-radius: 30px
 
 //main
 main
@@ -251,28 +500,35 @@ main
   width: 30px
   cursor: pointer
   display: none
+
   span
     display: block
     width: 100%
     height: 2px
     background: $accent
     margin: 0 0 4px
+
     &:last-child
       margin: 0
 
 .menu
   margin: 78px 0 48px
+
   li
     margin: 0 0 22px
+
     &:last-child
       margin: 0
+
     a
       display: flex
       align-items: center
       color: $links
       font-size: 18px
+
       &:hover
         color: $accent
+
     .icon-svg
       fill: $accent
       width: 29px
@@ -289,6 +545,7 @@ main
   font-size: 24px
   font-weight: bold
   color: $links
+
   &:hover
     color: $accent
 
@@ -309,6 +566,7 @@ main
   position: relative
   border-radius: 40px 0px 0px 40px
   overflow: hidden
+
   &:before
     content: ''
     position: absolute
@@ -334,6 +592,7 @@ main
   color: #fff
   padding: 123px 100px
   position: relative
+
   h3
     text-transform: uppercase
     font-weight: bold
@@ -360,17 +619,20 @@ main
   justify-content: flex-start
   padding: 0 0 0 100px
   z-index: 1
+
   li
     margin: 0 14px 0 0
     width: 18px
     height: 18px
     border: 1px solid #FFFFFF
       radius: 50%
+
     &:last-child
       margin: 0
 
     button
       display: none
+
   .slick-active
     background: #fff
 
@@ -391,9 +653,11 @@ main
   justify-content: flex-end
   color: #fff
   padding: 38px 10px
-  >*:not(.services-item__img)
+
+  > *:not(.services-item__img)
     position: relative
     z-index: 1
+
   h3
     margin: 0 auto 19px
     text-align: center
@@ -408,14 +672,14 @@ main
   position: absolute
   left: 50%
   top: 50%
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%)
 
 //.manicure
 .manicure
   padding: 0 0 78px
+
   h2
     margin: 0 auto 42px
-
 
 
 .manicure-box
@@ -433,10 +697,12 @@ main
   background: linear-gradient(0deg, #AB4986, #AB4986), url("../img/manicure1.jpg") no-repeat center
     size: cover, cover
   background-blend-mode: soft-light, normal
+
   h3
     text-transform: uppercase
     font-weight: bold
     font-size: 30px
+
   &:last-child
     margin: 0
 
@@ -458,15 +724,18 @@ main
 .service-section
   background: #F2E4EA
   padding: 77px 0 76px
+
   h2
     text-align: left
     margin: 0 auto 15px
+
   h3
     text-transform: uppercase
     font-weight: bold
     color: $links
     margin: 10px 0 50px
     font-size: 30px
+
   .btn
     margin: 20px 0 0
 
@@ -479,12 +748,14 @@ main
   align-items: center
   justify-content: center
   position: relative
+
   .img-blur
     position: absolute
     filter: blur(20px)
     bottom: -10px
     left: 0
     z-index: 0
+
   img
     border-radius: 30px
     position: relative
@@ -493,16 +764,20 @@ main
 //laser-hair-removal
 .laser-hair-removal
   padding: 108px 0 76px
+
   h2
     margin: 0 auto 24px
+
   .img-wrapper
     max-height: none
 
 .box-text
   line-height: 22px
   font-size: 18px
+
   p
     margin: 0 0 20px
+
     &:last-child
       margin: 0
 
@@ -537,6 +812,7 @@ main
   background: $links
   color: #fff
   padding: 23px 97px 40px 173px
+
   h2
     text-align: left
     color: #fff
@@ -548,15 +824,17 @@ main
     position: relative
     text-align: left
     margin: 0 0 61px
+
     &:before
       content: ''
       position: absolute
       top: 50%
-      transform: translate(0,-50%)
+      transform: translate(0, -50%)
       left: 0
       width: 100%
       height: 2px
       background: $links
+
     span
       background: #fff
       position: relative
@@ -566,12 +844,15 @@ main
 .masters-slider
   width: 100%
   padding: 0 38px
+
   .slick-dots
     bottom: 64px
     justify-content: flex-end
     padding: 0 100px 0 0
+
     li
       background: #F2E4EA
+
     .slick-active
       background: $links
 
@@ -580,18 +861,22 @@ main
   display: flex
   align-items: flex-start
   flex-wrap: wrap
+
   h3
     color: $links
     text-transform: uppercase
     font-weight: bold
     margin: 0 0 15px
     font-size: 30px
+
   strong
     font-weight: bold
+
   .box-text
     font-size: 18px
     max-width: 575px
     width: 100%
+
   .btn
     margin: 55px 0 0
 
@@ -618,6 +903,7 @@ main
   opacity: 1
   width: 16px
   height: 31px
+
   &:before
     display: none
 
@@ -625,6 +911,7 @@ main
   left: 0
   background: url("../img/slick-prev.svg") no-repeat center
     size: 100%
+
   &:hover, &:focus
     background: url("../img/slick-prev.svg") no-repeat center
       size: 100%
@@ -633,6 +920,7 @@ main
   right: 0
   background: url("../img/slick-next.svg") no-repeat center
     size: 100%
+
   &:hover, &:focus
     background: url("../img/slick-next.svg") no-repeat center
       size: 100%
@@ -643,13 +931,16 @@ main
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/reviews-bg.jpg") no-repeat center
     size: cover, cover
   background-blend-mode: screen, normal
+
   h2
     margin: 0 auto 37px
 
 .reviews-slider
   padding: 0 100px
+
   .slick-next
     right: 60px
+
   .slick-prev
     left: 60px
 
@@ -662,6 +953,7 @@ main
   border-radius: 20px
   color: #484848
   padding: 25px 19px 33px 27px
+
   h3
     font-weight: bold
     color: $accent
@@ -686,21 +978,26 @@ main
 .reviews-box__body
   line-height: 15px
   font-size: 12px
+
   p
     margin: 0 0 20px
+
     &:last-child
       margin: 0
 
 //.licenses
 .licenses
   padding: 38px 0 116px
+
   h2
     margin: 0 auto 21px
 
 .licenses-slider
   padding: 0 100px
+
   .slick-next
     right: 60px
+
   .slick-prev
     left: 60px
 
@@ -716,9 +1013,11 @@ main
 footer
 
   position: relative
+
   .container
     padding: 65px 15px 74px
     border-top: 2px solid $links
+
   .phone
     margin: 0
 
@@ -729,6 +1028,7 @@ footer
   justify-content: space-between
   flex-wrap: wrap
   padding: 0 80px 0 50px
+
   h3, .schedule
     color: $accent
     font-size: 14px
@@ -737,14 +1037,18 @@ footer
 .list-social
   display: flex
   align-items: center
+
   .icon-svg
     fill: $links
+
   a
     display: flex
     align-items: center
     justify-content: center
+
   li
     margin: 0 17px 0 0
+
     &:last-child
       margin: 0
 
@@ -766,11 +1070,16 @@ footer
 
 .footer-menu
   column-count: 2
+
   li
     margin: 0 0 6px
+
     a
       color: $links
       font-size: 12px
+
+
+
 
 @import "media"
 // Всегда в конце

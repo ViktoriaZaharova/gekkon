@@ -54,6 +54,28 @@ $('.licenses-slider').slick({
     ]
 });
 
+$('.article-gallery').slick({
+    slidesToShow: 3,
+    dots: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                fade: true
+            }
+        }
+    ]
+});
+
 $('.go_to').click(function () {
     var scroll_el = $(this).attr('href');
     if ($(scroll_el).length != 0) {
